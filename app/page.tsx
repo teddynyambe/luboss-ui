@@ -1,12 +1,17 @@
-import Image from "next/image";
+import { useSession, signIn } from "next-auth/react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import MyTag from "@/components/auth/test";
+import AuthProvider from "./_app";
+import AppHeader from "@/components/header/AppHeader";
+import AppFooter from "../components/footer/footer";
+import Declaration from "./declaration/page";
+import Director from "@/components/pages/director";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-      <h1>Home</h1>
-       
-      </div>
-    </main>
+    // <AuthProvider>
+    <Director />
+    // </AuthProvider>
   );
 }

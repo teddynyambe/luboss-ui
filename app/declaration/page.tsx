@@ -1,17 +1,15 @@
-import AppFooter from '@/components/footer/footer'
-import AppHeadeer from '@/components/header/AppHeadeer'
-import React from 'react'
+import AppFooter from "@/components/footer/footer";
+import AppHeadeer from "@/components/header/AppHeader";
+import React from "react";
 
 const Declaration = () => {
   return (
     <>
-    <AppHeadeer></AppHeadeer>
-    <div>
+      <div>
         <h2>Declarations</h2>
-    </div>
-    <AppFooter></AppFooter>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Declaration
+export default Declaration;

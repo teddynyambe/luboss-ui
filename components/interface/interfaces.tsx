@@ -1,7 +1,11 @@
-export interface Member {
+interface User {
   username: string;
+  is_active: boolean;
   password: string;
-  role: string;
+}
+
+export interface Member {
+  user: User;
   first_name: string;
   last_name: string;
   nrc: string;
@@ -24,4 +28,8 @@ export interface Member {
 export interface SubmitError {
   errorMessage: string;
   isError: boolean;
+}
+
+export interface Credentials {
+  username: string;
 }
